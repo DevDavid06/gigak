@@ -1,0 +1,415 @@
+@media (max-width:350px){
+    .header{
+        height: 100dvh;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .menu{
+        visibility: visible;
+    }
+    .other-menu{
+        flex-direction: column;
+    }
+    .hidephn{
+        display: none;
+    }
+    .logo{
+        width: 130px;
+    }
+    nav ul{
+        padding-left: 20px;
+        padding-right: 25px;
+    }
+    .intro{
+        text-align: center;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .intro1{
+        font-size: 34px;
+    }
+    .intro2{
+        font-size: 20px;
+        font-style: italic;
+    }
+    
+    .services{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .serve2{
+        font-size: 33px;
+    }
+   .team-img{
+        align-items: center;
+        text-align: center;
+   }
+   .team-img span{
+         margin: 0;
+         
+   }
+   .achieves{
+        margin-top: -50px;
+        height: auto;
+        padding: 20px;
+   }
+   .count{
+        text-align: center;
+        gap: 20px;
+   }
+   .fa-solid{
+        font-size: 35px;
+   }
+.abt-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 750px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+.abt-us{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.story{
+    color: yellow;
+    background-color: #002699;
+    height: 25px;
+    padding: 5px;
+    font-weight: bold;
+    width: 0px;
+    flex-grow: 1;
+    text-align: center;
+}
+.abt-intro{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.abt-intro2{
+    font-size: 18px;
+    color: gray;
+    line-height: 40px;
+    text-align: center;
+}
+.abt-img{
+    background-image: url(img/about-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+    width: 350px;
+    flex-grow: 1;
+}
+.attribute{
+    display: flex;
+    gap: 40px;
+}
+.attribute span{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.abt-btn{
+    gap: 2px;
+}
+.abt-btn1{
+    padding: 15px;
+}
+.abt-btn2{
+    padding: 15px;
+}
+.graphic{
+    text-align: center;
+}
+.projects{
+    padding:0px ;
+}
+.project1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pj-type{
+    width: 80%;
+    font-size: 28px;
+    margin-left: 15px;
+}
+.lpt-cont{
+    text-align: center;
+    margin: 0px;
+    flex-direction: column;
+}
+.lpt-type{
+    display: flex;
+    justify-content:center ;
+    margin: 10px;
+    font-size: 25px;
+    width: 100%;
+}
+.lpt-bout{
+    text-align: center;
+}
+#gd-pros{
+    gap: 40px;
+    align-items: center;
+}
+.impo{
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.impo-intro{
+    text-align: center;
+}
+.impo-intro2{
+    text-align: center;
+}
+}
+@media (min-width:351px) and (max-width:650px){
+    .header{
+        height: 100dvh;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar li a{
+        color: yellow;
+        font-size: 23px;
+    }
+    .menu{
+        visibility: visible;
+    }
+    .other-menu{
+        flex-direction: column;
+    }
+    .hidephn{
+        display: none;
+    }
+    .logo{
+        width: 150px;
+    }
+    nav ul{
+        padding-left: 25px;
+        padding-right: 30px;
+    }
+   
+    .intro{
+        text-align: center;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+     .intro1{
+        font-size: 37px;
+    }
+    .intro2{
+        font-size: 25px;
+        font-style: italic;
+    }
+    .services{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .serve2{
+        font-size: 35px;
+    }
+    .team-img{
+        align-items: center;
+        text-align: center;
+   }
+   .team-img span{
+         margin: 0;
+         
+   }
+   .achieves{
+        margin-top: -50px;
+        height: auto;
+        padding: 20px;
+   }
+   .count{
+        text-align: center;
+        gap: 20px;
+   }
+   .fa-solid{
+        font-size: 35px;
+   }
+   .abt-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 750px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.abt-us{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.abt-btn1{
+    padding: 15px;
+}
+.abt-btn2{
+    padding: 15px;
+}
+.graphic{
+    text-align: center;
+}
+.pj-type{
+    width: 80%;
+    font-size: 28px;
+    margin-left: 15px;
+}
+.lpt-cont{
+    text-align: center;
+    margin: 0px;
+    flex-direction: column;
+    
+}
+.lpt-type{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    font-size: 25px;
+    width: 100%;
+}
+.lpt-bout{
+    text-align: center;
+}
+#gd-pros{
+    gap: 40px;
+    align-items: center;
+}
+.impo{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.impo-intro{
+    text-align: center;
+}
+.impo-intro2{
+    text-align: center;
+}
+}
+@media (min-width:651px) and (max-width:850px){
+    .header{
+        height: 100dvh;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar li a{
+        color: yellow;
+        font-size: 23px;
+    }
+    .menu{
+        visibility: visible;
+    }
+    .other-menu{
+        flex-direction: column;
+    }
+    .hidephn{
+        display: none;
+    }
+    .logo{
+        width: 150px;
+    }
+    nav ul{
+        padding-left: 45px;
+        padding-right: 50px;
+    }
+   
+    .intro{
+        text-align: center;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  
+    .services{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .serve2{
+        font-size: 35px;
+    }
+    .team-img{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+   }
+   .team-img span{
+         margin: 0;
+         
+   }
+   .achieves{
+        margin-top: -50px;
+        height: auto;
+   }
+   .lpt-cont{
+    margin: 0;
+   }
+   .lpt-type{
+    width: 100%;
+   }
+   #gd-pros{
+    gap: 40px;
+    align-items: center;
+}
+.impo{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.impo-intro{
+    text-align: center;
+}
+.impo-intro2{
+    text-align: center;
+}
+.impo-plan{
+    width: 80%;
+}
+.vid-pros{
+    width: 80%;
+}
+.overlay{
+    width: 100%;
+}
+.vid-pros video{
+    width: 100%;
+}
+}
+@media (min-width:851px) and (max-width:1350px){
+    .team-img{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+   }
+   .team-img span{
+         margin: 0;
+         
+   }
+   .achieves{
+        margin-top: -50px;
+        height: auto;
+   }
+   
+   .lpt-type{
+    width: 100%;
+   }
+}
