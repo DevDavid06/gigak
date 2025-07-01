@@ -86,6 +86,12 @@ form{
 }
 .down{
     flex-direction: column;
+    padding: 30px;
+    margin-left: -30px;
+}
+
+form{
+    margin: -30px;
 }
 }
 @media (min-width:351px) and (max-width:775px){
@@ -104,6 +110,11 @@ form{
 }
 .down{
     flex-direction: column;
+    padding: 30px;
+    margin-left: -30px;
+}
+form{
+    margin: -30px;
 }
 }
 @media (min-width:776px) and (max-width:1260px){
