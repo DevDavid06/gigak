@@ -1,0 +1,120 @@
+.head1{
+    padding-top:100px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    padding-left: 100px;
+    align-items: center;
+    color: #002699;
+    font-weight: 550;
+    border-bottom: 1px solid #f4f4f4;
+}
+.head1 span{
+    font-weight: bolder ;
+}
+.head1 a{
+    color: #002699;
+}
+.head2{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+.head2s{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-grow: 1;
+}
+.head2s i{
+    background-color: #002699;
+    padding: 20px;
+    color: yellow;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.in-touch{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.down{
+    object-fit: cover;
+    width: 100%;
+    background-image: url(img/deep-bluish-plain.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+form{
+    margin: 0px;
+}
+.para{
+        transition: all 0.7s ease;
+
+}
+.iconn{
+    transition: all 0.7s ease;
+}
+@media (max-width:350px){
+.head1{
+    padding-left: 30px;
+}
+.head2{
+    margin-left:20px;
+    margin-right: 20px;
+}
+.head2s{
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.down{
+    flex-direction: column;
+}
+}
+@media (min-width:351px) and (max-width:775px){
+.head1{
+    padding-left: 30px;
+}
+.head2{
+    margin-left:20px;
+    margin-right: 20px;
+    gap: 35px;
+}
+.head2s{
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.down{
+    flex-direction: column;
+}
+}
+@media (min-width:776px) and (max-width:1260px){
+.head1{
+    padding-left: 30px;
+}
+.head2{
+    margin-left:50px;
+    margin-right: 50px;
+    gap: 35px;
+}
+
+}
+

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="img/gigak1-removebg-preview (1).png" type="image/x-icon">
+    <title>Gigak Technologies</title>
+    <style>
+        .impo{
+            background:white;
+            margin-top: 20px;
+        }
+        .impo-intro{
+            color: #041C3F;
+            font-weight: bolder;
+           
+        }
+        .impo-intro p{
+            font-size: 15px;
+            color: #0056b3;
+        }
+        .impo-intro2{
+            color:#041C3F;
+            line-height: 1.7;
+        }
+        .impo-img{
+             background: linear-gradient(to bottom right, #0057b381, #0057b381), url(img/p7.jpg);
+             background-size: cover;
+        }
+        .vid-sec{
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .video-back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100% ;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .about{
+            display: flex;
+            position: relative;
+            z-index: 1;
+            gap: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493));
+             background-size: cover;
+             height: 60dvh;
+             color: white;
+             text-align: center;
+             padding: 20px;
+        }
+        .achieves{
+           background: none;
+            justify-content: start;
+            padding: 0%;
+            height: auto;
+        }
+        .accomplished{
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(img/deep-bluish-plain.jpeg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 70px;
+            padding-bottom: 50px;
+        }
+        .accom-words{
+            margin-top: 60px;
+            text-align: center;
+            color: white;
+        }
+        .accom-words h2{
+            font-size: 40px;
+        }
+        .accom-words p{
+            font-size: 25px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="sidebar" class="sidebar">
+            <div class="other-menu">
+            <li onclick="hideSide()" class="menu"><a href="#"><i class="fa fa-close menu-color"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+
+            </div>
+        </ul>
+        <ul>
+            <li class="child"><a href=""><img class="logo" src="img/gigak1-removebg-preview (1).png" alt=""></a></li>
+            <div class="other-menu">
+            <li id="fst" class="hidephn"><a href="index.html">Home</a></li>
+            <li id="snd" class="hidephn"><a href="about.html">About</a></li>
+            <li id="thd" class="hidephn"><a href="project.html">Projects</a></li>
+            <li id="thd" class="hidephn"><a href="blog.html">Blogs</a></li>
+            <li id="ffh" onclick="showSide()" class="menu"><a href="#"><i class="fa fa-bars menu-color"></i></a></li>
+            </div>
+            <li id="fth" class="hidephn"><a href="contact.html">Contact us</a></li>
+
+        </ul>
+    </nav>
+    <div class="head1">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <span>>></span>
+        <p>About</p>
+    </div>
+    <div class="impo">
+        <div class="impo-plan">
+            <div class="impo-intro">
+                <span>About Our Company</span>
+                <p>Who we are</p>
+            </div>
+            <div class="impo-intro2">
+                <span> 
+                    At Gigak technologies, we are dedicated to delivering exceptional solutions in the fields of graphic design, web design, IT training, and laptop repair. Founded on a commitment to quality and innovation, our mission is to help individuals and businesses achieve their goals through creative and technical expertise.
+
+                    Graphic Design: We bring ideas to life with visually stunning designs that communicate your message effectively and make a lasting impact.
+
+                    Web Design: From simple websites to complex platforms, we create tailored web solutions that combine aesthetics, functionality, and user experience.
+
+                    IT Training: Empowering you with the skills needed to thrive in the digital world, our IT training programs are practical, hands-on, and results-driven.
+
+                    Laptop Repair: With reliable and efficient repair services, we ensure your devices are back in top shape, minimizing downtime and maximizing productivity.
+
+      
+                </span>
+            </div>
+        </div>
+        <div class="impo-img">
+            
+        </div>
+    </div>
+    <div class="our-team">
+        <div class="team-info">
+            <h2> Meet the Founder</h2>
+        </div>
+        <div class="team-card">
+            <img src="img/IMG-20250624-WA0003.jpg" alt="">
+            <div class="h2">
+                <p>Mr Tobiloba</p>
+            </div>
+        </div>
+        <div class="team-card">
+            <div class="word">
+               </span> 
+                    At the heart of Gigak technologies is Mr Tobiloba, a visionary leader and innovator in the field of technology and design. With years of experience in graphic design, web development, IT training, and laptop repair, Mr Tobiloba has a deep passion for helping businesses and individuals succeed in the digital age.
+                    Driven by the belief that technology and creativity can transform lives, he established gigak technologies to offer comprehensive, client-focused services. Whether it’s crafting stunning visuals, building user-friendly websites, empowering others with IT skills, or restoring functionality to essential devices, he is committed to delivering excellence in every project
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="vid-sec">
+        <video autoplay loop muted class="video-back">
+            <source src="video/BB_bde0b801-d393-4460-8cad-ce831d0197ed.mp4" type="video/mp4">
+        </video>
+        <div class="about">
+            <h1>Good Business Company, Live better</h1>
+            <h3>Now. Think of your business / brand and try to personify it. Once you have a character in mind, try to identify its purpose.</h3>
+        </div>
+    </div>
+    <div id="counterSection" class="accomplished">
+        <div class="accom-words">
+            <h2>What We Did</h2>
+            <p>What we've accomplished over the years</p>
+        </div>
+        <div class="achieves">
+           
+            <div class="count">
+                <div>
+                    <span class="counter" data-target="12">0</span>
+                    <span>+</span>
+                </div>
+                <p>Years of experience</p>
+            </div>
+            <div class="count">
+                <div>
+                    <span class="counter" data-target="20">0</span>
+                    <span>k</span>
+                </div>
+                <p>Solved cases</p>
+            </div>
+            <div class="count">
+                <div>
+                    <span class="counter" data-target="10">0+</span>
+                    <span>K</span>
+                </div>
+                <p>Satisfied Customers</p>
+            </div>
+            <div class="count">
+                <div>
+                    <span class="counter" data-target="100">0</span>
+                    <span>+</span>
+                </div>
+                <p>Graduated Tech Students</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     <footer>
+            <div class="foot-info">
+                <img class="foot-img" src="img/gigak1-removebg-preview (1).png" alt="">
+                <div class="foot-word">
+                    <span>Contact us today, and we'll help you get started on building your business online presence.</span>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook foot-icon"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok foot-icon"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok foot-icon"></i></a>
+                </div>
+            </div>
+                <div class="enve-lope">
+                    <div>
+                      <i class="fa fa-envelope enve"></i>
+                    </div>
+                      <div class="enves">
+                        <span>Email Address</span>
+                      </div>
+                      <div>
+                        <span>gigaktechnologies@gmail.com</span>
+                      </div>
+                </div>
+                  <div class="enve-lope">
+                    <div>
+                      <i class="fa fa-location enve"></i>
+                    </div>
+                    <div class="enves">
+                        <span>Address</span>
+                    </div>
+                    <div>
+                        <span>7/8 Akute-odo road, Akute. Ogun state</span>
+                    </div>
+                </div> 
+                
+                <div class="enve-lope">
+                    <div>
+                      <i class="fa fa-phone enve"></i>
+                    </div>
+                      <div class="enves">
+                        <span>Phone Contact</span>  
+                      </div>
+                      <div>
+                        <span>+234 905 054 4169</span>
+                      </div>
+                </div>
+              
+        </footer>
+        <div class="foot2">
+            <div class="copy">
+                <span>Copyright © 2025 Gigak technologies. All Rights Reserved</span>
+            </div>
+            <div class="end-word">
+                <div>
+                    <a href="">Privacy policy</a>
+                </div>
+                <div>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
