@@ -130,6 +130,9 @@
 .projects{
     padding:0px ;
 }
+.project3{
+    padding: 0px;
+}
 .project1{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -171,6 +174,54 @@
 .impo-intro2{
     text-align: center;
 }
+.our-team{
+    padding-left:15px ;
+    padding-right: 15px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+form{
+    padding: 0%;
+    margin: 20px;
+}
+.form{
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.form h1{
+    text-align: center;
+}
+.form h3{
+    text-align: center;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+.foot-info{
+    padding:10px ;
+    justify-content: center;
+    align-items: center;
+}
+.foot-word{
+    text-align: center;
+}
+.foot2{
+    gap: 20px;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+}
+.end-word{
+    margin: auto;
+}
+
+
+
 }
 @media (min-width:351px) and (max-width:650px){
     .header{
@@ -302,6 +353,52 @@
 .impo-intro2{
     text-align: center;
 }
+.our-team{
+    padding-left:15px ;
+    padding-right: 15px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+form{
+    padding: 0%;
+    margin: 20px;
+}
+.form{
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.form h1{
+    text-align: center;
+}
+.form h3{
+    text-align: center;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+.foot-info{
+    padding:20px ;
+    justify-content: center;
+    align-items: center;
+}
+.foot-word{
+    text-align: center;
+}
+.foot2{
+    gap: 40px;
+    padding: auto;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+}
+.end-word{
+    margin: auto;
+}
 }
 @media (min-width:651px) and (max-width:850px){
     .header{
@@ -393,7 +490,61 @@
 .vid-pros video{
     width: 100%;
 }
+.our-team{
+    padding-left:25px ;
+    padding-right: 25px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+.team-card{
+    width: 300px;
+}
+form{
+    padding: 0%;
+}
+.form{
+    width: 60%;
+    
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+.foot-info{
+    padding:0px ;
+    justify-content: center;
+    align-items: center;
+}
+.foot-word{
+    text-align: center;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+.foot-info{
+    padding:20px ;
+    justify-content: center;
+    align-items: center;
+}
+.foot-word{
+    text-align: center;
+}
+.foot2{
+    gap: 30px;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+}
+.end-word{
+    margin: auto;
+}
+}
+
 @media (min-width:851px) and (max-width:1350px){
     .team-img{
         align-items: center;
@@ -408,8 +559,33 @@
         margin-top: -50px;
         height: auto;
    }
-   
+   .impo{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
    .lpt-type{
     width: 100%;
    }
+   .our-team{
+    padding-left:25px ;
+    padding-right: 25px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+form{
+    padding: 0%;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+.foot-info{
+    justify-content: center;
+}
+
 }
