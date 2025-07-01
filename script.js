@@ -51,8 +51,8 @@ function lpt(){
 
   nums.style.transform = 'scale(1.1)'
 
-  type.style.color = 'blue'
-  type.style.borderBottom = '2px solid blue'
+  type.style.color = '#0056b3'
+  type.style.borderBottom = '2px solid #0056b3'
  
 }
 function lptl(){
@@ -70,8 +70,8 @@ function lpt1(){
 
   nums.style.transform = 'scale(1.1)'
 
-  type.style.color = 'blue'
-  type.style.borderBottom = '2px solid blue'
+  type.style.color = '#0056b3'
+  type.style.borderBottom = '2px solid #0056b3'
  
 }
 function lptl1(){
@@ -89,8 +89,8 @@ function lpt2(){
 
   nums.style.transform = 'scale(1.1)'
 
-  type.style.color = 'blue'
-  type.style.borderBottom = '2px solid blue'
+  type.style.color = '#0056b3'
+  type.style.borderBottom = '2px solid #0056b3'
  
 }
 function lptl2(){
@@ -118,3 +118,33 @@ window.addEventListener('scroll', () =>{
     navbar.classList.remove('navbar-hidden');
   }
 })
+ 
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+            const responseDiv = document.getElementById('formResponse');
+
+            form.addEventListener('submit', function(event){
+                event.preventDefault();
+                
+                responseDiv.style.color = "blue";
+                responseDiv.textContent = "Submitting...";
+
+                emailjs.sendForm('service_l8pfsol', 'template_c68k5v4', form)
+                    .then(() => {
+                        responseDiv.style.color = "green";
+                        responseDiv.textContent = "Request sent successfully!";
+                        form.reset();
+                        setTimeout(() => {
+                        responseDiv.textContent = "";
+                    }   ,2000);
+                    })
+                    .catch(error => {
+                        responseDiv.style.color = "red";
+                        responseDiv.textContent = "An error occurred. Please try again later.";
+                        console.error("EmailJS Error:", error);
+                        setTimeout(() => {
+                        responseDiv.textContent = "";
+                },         2000);
+                    });
+            });
+        });
