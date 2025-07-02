@@ -68,7 +68,7 @@ nav ul{
 }
 .child{
     margin-right: auto;
-    font-size: 30px;
+    
     margin-bottom: -20px;
 }
 .logo{
@@ -355,10 +355,9 @@ nav ul{
     
 }
 .abt-img{
-    background-image: url(img/about-2.jpg);
+    background-image: url(img/IMG-20250701-WA0006.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 520px;
     width: 350px;
     flex-grow: 1;
