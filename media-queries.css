@@ -465,6 +465,12 @@ footer{
     gap: 40px;
     align-items: center;
 }
+.abt-plan{
+    align-items: center;
+}
+.about-img{
+    width: 250px;
+}
 .impo{
     height: auto;
     padding-top: 50px;
@@ -558,6 +564,9 @@ footer{
    .achieves{
         margin-top: -50px;
         height: auto;
+   }
+   .abt-plan{
+    width: 550px;
    }
    .impo{
     height: auto;
