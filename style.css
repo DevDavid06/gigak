@@ -6,7 +6,7 @@
 }
 nav{
     width: 100%;
-    background-color: #01131C;
+    background-color: white;
     padding-top: 17px;
     padding-bottom: 17px;
     position: fixed;
@@ -27,7 +27,7 @@ nav ul{
 
 }
  li a {
-    color: white;
+    color:#002699;
     text-decoration: none;
     transition: all 0.6s ease-in-out;
 }
@@ -831,13 +831,13 @@ form img{
     flex-grow: 1;
 }
 
-input, textarea {
+.form input, textarea {
     width: 100%;
     padding: 10px;
     border: 2px solid #002699;
     border-radius: 4px;
 }
-textarea {
+.form textarea {
     height: 80px;
     resize: vertical;
 }
