@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="img/gigak-logo.png" type="image/x-icon">
+    <title>Understanding the Importance of IT Training - Blog</title>
+    <style>
+        /* ...styles unchanged... */
+        main {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 6px 32px rgba(10,35,66,0.10);
+            padding: 2.5rem 5rem;
+            margin: 2.5rem auto;
+            max-width: 900px;
+        }
+        h1, h2, h3 {
+            font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+        }
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        article ul, article ol {
+            margin-bottom: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ffd600;
+        }
+        blockquote {
+            font-size: 1.1rem;
+        }
+        .highlight-title {
+            color: #ffd600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+        }
+        .styled-list {
+            margin-bottom: 1.5rem;
+            color: #0a2342;
+            padding-left: 1.2rem;
+        }
+        .styled-list.square {
+            list-style-type: square;
+        }
+        .styled-list.circle {
+            list-style-type: circle;
+        }
+        .styled-list.link-list a {
+            color: #0a7cff;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .styled-list.link-list a:hover {
+            color: #ffd600;
+        }
+        .styled-list strong {
+            color: #0a2342;
+        }
+        .custom-blockquote {
+            border-left: 4px solid #ffd600;
+            background: #f0f6ff;
+            color: #0a2342;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+            font-size: 1.1rem;
+        }
+        .final-thoughts {
+            background: linear-gradient(90deg,#0a2342 60%,#ffd600 100%);
+            color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 2px 12px rgba(10,35,66,0.10);
+        }
+        .final-thoughts h2 {
+            color: #fff;
+        }
+        .other-blogs-section {
+            margin-top: 3rem;
+            padding: 2rem 1rem 1rem 1rem;
+            background: #f8fafc;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(10,35,66,0.06);
+        }
+        .other-blogs-title {
+            color: #0a2342;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+        }
+        .other-blogs-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+        .blog-card {
+            flex: 1 1 250px;
+            min-width: 220px;
+            max-width: 320px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(10,35,66,0.08);
+            text-decoration: none;
+            color: #0a2342;
+            transition: transform 0.15s, box-shadow 0.15s;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(10,35,66,0.13);
+            background: #f0f6ff;
+        }
+        .blog-card-content {
+            padding: 1.2rem 1rem;
+        }
+        .blog-card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+            color: #002699;
+            font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+        }
+        .blog-card p {
+            margin: 0;
+            font-size: 0.97rem;
+            color: #0a2342;
+        }
+        .main-horizontal-container {
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+        .main-articles {
+            flex: 2 1 0;
+            min-width: 0;
+        }
+        .main-other-blogs {
+            flex: 1 1 320px;
+            min-width: 280px;
+            max-width: 370px;
+            position: sticky;
+            top: 2.5rem;
+        }
+        .other-blogs-section {
+            margin-top: 0;
+            padding: 2rem 1rem 1rem 1rem;
+            background: #f8fafc;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(10,35,66,0.06);
+        }
+        .other-blogs-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .blog-card {
+            max-width: 100%;
+            min-width: 0;
+        }
+        @media (max-width: 1100px) {
+            .main-horizontal-container {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .main-other-blogs {
+                position: static;
+                max-width: 100%;
+                width: 100%;
+            }
+            main{
+                padding: 2rem 1rem;
+                margin: 2rem auto;
+                max-width: 100%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+        @media (max-width: 900px) {
+            .other-blogs-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .blog-card {
+                max-width: 100%;
+            }
+            main{
+                padding: 1.5rem 1rem;
+                margin: 1.5rem auto;
+                max-width: 100%;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;   
+            }
+        }
+        @media (max-width: 700px) {
+            main{
+                padding: 1.5rem 1rem;
+                margin: 1.5rem auto;
+                max-width: 100%;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            .main-horizontal-container {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .main-articles, .main-other-blogs {
+                max-width: 100%;
+                width: 100%;
+            }
+            .other-blogs-section {
+                padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+     <nav id="navbar">
+        <ul id="sidebar" class="sidebar">
+            <div class="other-menu">
+            <li onclick="hideSide()" class="menu"><a href="#"><i class="fa fa-close menu-color"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            </div>
+        </ul>
+        <ul>
+            <li class="child"><a href=""><img class="logo" src="img/gigak-logo.png" alt=""></a></li>
+            <div class="other-menu">
+            <li id="fst" class="hidephn"><a href="index.html">Home</a></li>
+            <li id="snd" class="hidephn"><a href="about.html">About</a></li>
+            <li id="thd" class="hidephn"><a href="blog.html">Blogs</a></li>
+            <li id="ffh" onclick="showSide()" class="menu"><a href="#"><i class="fa fa-bars menu-color"></i></a></li>
+            </div>
+            <li id="fth" class="hidephn"><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="head1">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <span>>></span>
+        <p>Blogs</p>
+         <span>>></span>
+        <p>Understanding the Importance of IT Training</p>
+    </div>
+    <main>
+        <div class="main-horizontal-container">
+            <div class="main-articles">
+                <article>
+                    <h1 style="color:#002699; font-size:2.5rem; margin-bottom:1.5rem; text-align:center;">
+                        Understanding the Importance of IT Training
+                    </h1>
+                    <img src="img/people-learning-programming.jpeg" alt="IT Training Importance" style="width:100%; border-radius:12px; margin-bottom:2rem; box-shadow:0 4px 16px rgba(10,35,66,0.08);">
+                </article>
+                <article>
+                    <h2 class="highlight-title">What is IT Training?</h2>
+                    <p>
+                        IT training involves learning the skills and knowledge needed to use, manage, and support technology in personal or professional settings. It covers a broad range of topics, from basic computer literacy to advanced programming, cybersecurity, and cloud computing.
+                    </p>
+                </article>
+                <article>
+                    <h2 class="highlight-title">Why is IT Training Important?</h2>
+                    <ul class="styled-list square">
+                        <li><strong>Boosts Employability:</strong> IT skills are in high demand across industries, making you more attractive to employers.</li>
+                        <li><strong>Enhances Productivity:</strong> Knowing how to use technology efficiently helps you work smarter and faster.</li>
+                        <li><strong>Keeps You Updated:</strong> Technology evolves rapidly; training ensures you stay current with the latest tools and trends.</li>
+                        <li><strong>Improves Problem-Solving:</strong> IT training develops analytical and troubleshooting skills.</li>
+                        <li><strong>Supports Career Growth:</strong> Advanced IT knowledge opens doors to higher positions and better pay.</li>
+                        <li><strong>Increases Security Awareness:</strong> Understanding cybersecurity helps protect data and systems from threats.</li>
+                        <li><strong>Empowers Innovation:</strong> IT skills enable you to create, automate, and innovate in your field.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2 class="highlight-title">Who Needs IT Training?</h2>
+                    <p>
+                        IT training is valuable for everyone—from students and job seekers to business professionals and entrepreneurs. Whether you want to start a tech career, improve your current job performance, or simply keep up with digital trends, IT training is essential.
+                    </p>
+                    <blockquote class="custom-blockquote">
+                        <em>“The advance of technology is based on making it fit in so that you don’t really even notice it.”</em> – Bill Gates
+                    </blockquote>
+                </article>
+                <article>
+                    <h2 class="highlight-title">How to Get Started with IT Training</h2>
+                    <ul class="styled-list circle">
+                        <li>Identify your learning goals and interests.</li>
+                        <li>Take online courses or attend workshops.</li>
+                        <li>Join tech communities and forums for support.</li>
+                        <li>Practice regularly with real-world projects.</li>
+                        <li>Seek certifications to validate your skills.</li>
+                        <li>Stay updated with the latest tech news and trends.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2 class="highlight-title">Recommended Resources</h2>
+                    <ul class="styled-list link-list">
+                        <li><a href="https://www.coursera.org/browse/information-technology" target="_blank">Coursera IT Courses</a> – Online IT training from top universities</li>
+                        <li><a href="https://www.linkedin.com/learning/topics/information-technology" target="_blank">LinkedIn Learning</a> – Professional IT skills development</li>
+                        <li><a href="https://www.edx.org/learn/information-technology" target="_blank">edX IT Training</a> – Free and paid IT courses</li>
+                        <li><a href="https://www.cybrary.it/" target="_blank">Cybrary</a> – Cybersecurity and IT learning platform</li>
+                    </ul>
+                </article>
+                <article class="final-thoughts">
+                    <h2>Final Thoughts</h2>
+                    <p>
+                        IT training is a powerful investment in your future. By building your technology skills, you open up new opportunities, stay competitive, and become adaptable in a rapidly changing world. Start learning today and unlock your potential in the digital age!
+                    </p>
+                </article>
+            </div>
+            <aside id="section" class="main-other-blogs">
+                <section class="other-blogs-section">
+                    <h2 class="other-blogs-title"><i class="fa fa-book-open"></i> Explore Other Blog Posts</h2>
+                    <div class="other-blogs-list">
+                        <a href="blog3.html" class="blog-card">
+                            <div class="blog-card-content">
+                                <h3>Graphic Design tips for beginners</h3>
+                                <p>Learn essential tips and tricks to kickstart your journey in graphic design and create stunning visuals effortlessly, from color theory to typography basics.</p>
+                            </div>
+                        </a>
+                        <a href="blog4.html" class="blog-card">
+                            <div class="blog-card-content">
+                                <h3>The Usefulness of AI in the Modern Era</h3>
+                                <p>Explore how artificial intelligence is transforming industries and enhancing our daily lives, from automating mundane tasks to providing personalized experiences.</p>
+                            </div>
+                        </a>
+                        <a href="blog2.html" class="blog-card">
+                            <div class="blog-card-content">
+                                <h3>Understanding Web Design Trends in 2025</h3>
+                                <p>Stay ahead with the latest web design trends, blending creativity and usability for modern, engaging websites in 2025 and beyond.</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+    <footer>
+            <div class="foot-info">
+                <img class="foot-img" src="img/gigak-logo.png" alt="">
+                <div class="foot-word">
+                    <span>Contact us today, and we'll help you get started on building your business online presence.</span>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook foot-icon"></i></a>
+                    <a href="https://www.tiktok.com/@gigaktechnologies?_t=ZM-8xZLsgM4H37&_r=1"><i class="fa-brands fa-tiktok foot-icon"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram foot-icon"></i></a>
+                </div>
+            </div>
+                <div class="enve-lope">
+                    <div>
+                      <i class="fa fa-envelope enve"></i>
+                    </div>
+                      <div class="enves">
+                        <span>Email Address</span>
+                      </div>
+                      <div>
+                        <span>gigaktechnologies@gmail.com</span>
+                      </div>
+                </div>
+                  <div class="enve-lope">
+                    <div>
+                      <i class="fa fa-location enve"></i>
+                    </div>
+                    <div class="enves">
+                        <span>Address</span>
+                    </div>
+                    <div>
+                        <span>7/8 Akute-odo road, Akute. Ogun state</span>
+                    </div>
+                </div> 
+                
+                <div class="enve-lope">
+                    <div>
+                      <i class="fa fa-phone enve"></i>
+                    </div>
+                      <div class="enves">
+                        <span>Phone Contact</span>  
+                      </div>
+                      <div>
+                        <span>+234 905 054 4169</span>
+                      </div>
+                </div>
+              
+        </footer>
+        <div class="foot2">
+            <div class="copy">
+                <span>Copyright © 2025 Gigak technologies. All Rights Reserved</span>
+            </div>
+            <div class="end-word">
+                <div>
+                    <a href="">Privacy policy</a>
+                </div>
+                <div>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
